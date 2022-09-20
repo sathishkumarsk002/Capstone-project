@@ -1,0 +1,110 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "name": "karthikean",
+      "email": "karthi@gmail.com",
+      "domain": "Python",
+      "experience": "3",
+      "location": "chennai"
+    },
+    {
+      "id": 3,
+      "name": "nikhil",
+      "email": "nikhil@gmail.com",
+      "domain": "UI",
+      "experience": "fresher",
+      "location": "chennai"
+    }
+  ],
+  "signup": [
+    {
+      "name": "sathishkumar",
+      "email": "sathishkumarthirumani2@gmail.com",
+      "mobile": "9080399649",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Avinash",
+      "email": "sathishkumarsk0099@gmail.com",
+      "mobile": "9080399649",
+      "password": "23234",
+      "id": 2
+    },
+    {
+      "name": "shyam",
+      "email": "shyam@gmail.com",
+      "mobile": "9442729977",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Akashpawan",
+      "email": "akash@gmail.com",
+      "mobile": "94444",
+      "password": "2323",
+      "id": 4
+    },
+    {
+      "name": "manoj",
+      "email": "manoj@gmail.com",
+      "mobile": "788888",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "sanjay",
+      "email": "sanjay@gmail.com",
+      "mobile": "9442729977",
+      "password": "234",
+      "id": 6
+    },
+    {
+      "name": "swetha",
+      "email": "swetha@gmail.com",
+      "mobile": "9443177478",
+      "password": "000",
+      "id": 7
+    },
+    {
+      "name": "swathi",
+      "email": "swathi@gmail.com",
+      "mobile": "9999",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "name": "nikhil",
+      "email": "naani@gmail.com",
+      "mobile": "123",
+      "password": "234",
+      "id": 9
+    },
+    {
+      "name": "abirami ravindran",
+      "email": "abirami.ravindran@gmail.com",
+      "mobile": "9962639057",
+      "password": "asd123",
+      "id": 10
+    },
+    {
+      "name": "kathikean",
+      "email": "karthi@gmail.com",
+      "mobile": "9442729977",
+      "password": "23234",
+      "id": 11
+    },
+    {
+      "name": "ashwin",
+      "email": "ashwin@gmail.com",
+      "mobile": "89328329",
+      "password": "23234",
+      "id": 12
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

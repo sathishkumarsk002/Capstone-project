@@ -1,0 +1,95 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2> Corestack Management Record</h2>
+        <div class="d-flex">
+            <button (click)=" clickAddManagement()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employess</button>
+            <button routerLink="/login" class="btn btn-danger mx-3">LogOut</button>
+        </div>
+    </div>
+</nav>
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Corestack Unleash the Power of cloud</h1>
+        <p class="cpl-md-8 fd-4">Click the button to get in our offical site </p>
+        <a class="btn btn-primary btn-lg" target="_blank" type="button" href="https://www.corestack.io/">Corestack</a>
+        </div>
+</div>
+
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Domain</th>
+            <th scope="col">Experience</th>
+            <th scope="col">Location</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allManagementData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.domain}}</td>
+            <td>{{data.experience}}</td>
+            <td>{{data.location}}</td>
+            
+            
+            <td>
+               
+                <button (click)="onEditManagement(data)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>&nbsp;
+                <button class="btn btn-danger" (click)="deleteManagement(data)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Button trigger modal --> 
+ <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Management Records</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" formControlName="name" class="form-control" id="exampleInputName"  placeholder="Enter Employee Name">
+                  
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email Id</label>
+                  <input type="email" formControlName="email" class="form-control" id="exampleInputEmailid" placeholder="Employee Email Id">
+                </div>
+                <div class="mb-3">
+                    <label class="for-label">Domain</label>
+                    <input type="domain" formControlName="domain" class="form-control" id="exampleInputDomain" placeholder="Employee Domain">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Experience</label>
+                    <input type="experience" formControlName="experience" class="form-control" id="exampleInputExperiecne" placeholder="Employee Expereience">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Location</label>
+                    <input type="location" formControlName="location" class="form-control" id="exampleInputLocation" placeholder="Employee location">
+                  </div>  
+                </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button *ngIf="showAdd"  type="button" class="btn btn-primary"(click)="addManagement()">Add Details</button>
+          <button  *ngIf="showbtn"   type="button" class="btn btn-primary"(click)="updateManagement()">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
